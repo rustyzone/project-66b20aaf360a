@@ -1,0 +1,24 @@
+{
+  "name": "Coupon Finder",
+  "version": "0.1",
+  "description": "Coupons..",
+  "permissions": [
+    "activeTab",
+    "<all_urls>",
+    "tabs"
+  ],
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["app.js"],
+      "css": ["coupon.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+}

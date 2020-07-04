@@ -1,0 +1,120 @@
+/*button styling*/
+._coupon__list > div{
+  padding: 5px 10px;
+  font-size:10px;
+  background:black;
+  height: auto;
+  color:white;
+  font-family:sans-serif;
+  font-weight:normal;
+  line-height:17px;
+  border-radius:3px;
+  cursor: pointer;
+  position:absolute;
+  right:10px;
+}
+
+._submit-overlay{
+  position:fixed;
+  width:220px;
+  height:200px;
+  top:50%;
+  left:50%;
+  margin-left: -110px;
+  margin-top: -120px;
+  background:white;
+  border:2px solid;
+  z-index: 9999999999999;
+  padding:10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+._coupon__list h1{
+  font-family: serif;
+  font-size:26px;
+  margin-bottom:20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom:15px;
+  line-height: 26px;
+}
+._coupon__list p{
+  font-family: sans-serif;
+  line-height:20px;
+  font-size:16px;
+  text-align:center;
+  font-weight: 500;
+  color: #868585;
+  margin-top:0px;
+}
+._coupon__list ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+._coupon__list ul li{
+  border-radius:3px;
+  border: 1px solid #e0e0e0;
+  padding:15px;
+  box-shadow: 0 3px 15px 0 rgba(0,0,0,0.25);
+  text-transform: uppercase;
+  margin-bottom:20px;
+}
+
+._coupon__list .code{
+  background: #ff8d00;
+  color:#fff;
+  padding:5px;
+  display: inline-block;
+  border-radius:3px;
+  border: 1px solid #eaeaea;
+  cursor:pointer;
+}
+._coupon__list li p{
+  text-align:left;
+  margin-top:10px;
+  margin:0;
+  text-transform: none;
+  font-size:14px;
+}
+
+._coupon__list{
+  height:300px;
+  width:300px;
+  border-radius:6px;
+  box-shadow: 0 3px 15px 0 rgba(0,0,0,0.25);
+  border:1px solid white;
+  background:white;
+  cursor:pointer;
+  padding:15px;
+  position:fixed;
+  top:90px;
+  right:5px;
+  z-index:9999999999;
+  overflow:hidden;
+  overflow-y: auto;
+}
+
+._coupon__button{
+  height:40px;
+  width:50px;
+  border-radius:6px;
+  border:1px solid white;
+  box-shadow: 0 3px 15px 0 rgba(0,0,0,0.25);
+  background:white;
+  cursor:pointer;
+  position:fixed;
+  font-family: serif;
+  color:#383636;
+  top:15px;
+  right:15px;
+  text-align:center;
+  z-index:9999999999;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:17px;
+  font-weight:bold;
+
+}
