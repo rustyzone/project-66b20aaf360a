@@ -1,10 +1,14 @@
-Run npm install
+### First run
+`npm install`
 
-Update firebase.js config.
+### Update src/firebase.js config.
 
-Run 
-npm run dev 
-or 
-npm run build 
+### Run 
 
-to test in chrome.
+`npm run dev `
+
+### or 
+
+`npm run build `
+
+To create a buld which will output to dist/ to output into chrome as you usually would.
