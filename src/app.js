@@ -2,6 +2,7 @@
 //Get current domain
 var domain = window.location.hostname;
 domain = domain.replace('http://', '').replace('https://', '').replace('www.','').split(/[/?#]/)[0];
+window.domain = domain; 
 
 chrome.runtime.sendMessage({command: "fetch", data: {domain: domain}}, (response) => {
   parseCoupons(response.data, domain);
@@ -59,7 +60,7 @@ var parseCoupons = function(coupons, domain) {
     createEvents();
 
   }catch(e){
-    console.log('no coupond found for this domain', e);
+    console.log('no coupons found for this domain', e);
   }
 }
 

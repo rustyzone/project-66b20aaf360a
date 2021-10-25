@@ -8,7 +8,7 @@
     "tabs"
   ],
   "background": {
-    "page": "background.html",
+    "scripts": ["firebase.js"],
     "persistent": false
   },
   "content_scripts": [
