@@ -1,0 +1,27 @@
+{
+  "name": "project66b20aaf360a",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "release": "cross-env NODE_ENV=production rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^2.40.0",
+    "rollup-plugin-chrome-extension": "^3.6.10",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "@rollup/plugin-replace": "^2.4.1",
+    "rollup-plugin-empty-dir": "^1.0.4",
+    "rollup-plugin-zip": "^1.0.1",
+    "webextension-polyfill": "^0.7.0",
+    "cross-env": "^7.0.3"
+  }
+}
