@@ -5,18 +5,9 @@
   "main": "app.js",
   "scripts": {
     "dev": "rollup -c -w",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "release": "cross-env NODE_ENV=production rollup -c"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rustyzone/project-66b20aaf360a.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rustyzone/project-66b20aaf360a/issues"
-  },
-  "homepage": "https://github.com/rustyzone/project-66b20aaf360a#readme",
   "dependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
@@ -32,5 +23,8 @@
     "rollup-plugin-empty-dir": "^1.0.4",
     "rollup-plugin-zip": "^1.0.1",
     "webextension-polyfill": "^0.7.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }

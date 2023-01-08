@@ -2,23 +2,18 @@
   "name": "Coupon Finder",
   "version": "0.1",
   "description": "Coupons..",
-  "permissions": [
-    "activeTab",
-    "<all_urls>",
-    "tabs"
-  ],
+  "permissions": ["activeTab", "tabs"],
+  "host_permissions": ["*://*/*"],
   "background": {
-    "scripts": ["firebase.js"],
-    "persistent": false
+    "service_worker": "firebase.js"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["*://*/*"],
       "js": ["app.js"],
       "css": ["coupon.css"],
       "run_at": "document_end"
     }
   ],
-  "manifest_version": 2,
-  "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+  "manifest_version": 3
 }
